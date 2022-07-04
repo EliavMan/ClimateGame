@@ -65,16 +65,16 @@ if (config.env === 'production') {
 // v1 api routes
 const router = express.Router();
 router.route("/").get((req, res) => {
-  res.sendFile(path.join(__dirname, '/../../index.html'));
+  res.sendFile(path.join(__dirname, '/../index.html'));
 });
 router.route("/tailwind.js").get((req, res) => {
-  res.sendFile(path.join(__dirname, '/../../tailwind.js'));
+  res.sendFile(path.join(__dirname, '/../tailwind.js'));
 });
 router.route("/jquery.js").get((req, res) => {
-  res.sendFile(path.join(__dirname, '/../../jquery.js'));
+  res.sendFile(path.join(__dirname, '/../jquery.js'));
 });
 router.route("/my.js").get((req, res) => {
-  res.sendFile(path.join(__dirname, '/../../my.js'));
+  res.sendFile(path.join(__dirname, '/../my.js'));
 });
 router.route("/show").get((req, res) => {
   // res.setHeader('Content-Type', 'text/html; charset=UTF-8');
